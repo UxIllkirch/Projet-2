@@ -139,6 +139,9 @@ table #t03 {
 .fa-futbol-o,
 .fa-camera {
   color: black;
+  
+}
+i{color: black;
   border-radius: 50%;
   border: rgb(26, 26, 26);
 }
