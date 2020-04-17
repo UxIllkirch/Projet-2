@@ -86,17 +86,17 @@ aside.loisir i {
   margin-top: 50px;
   font-weight: bold;
 }
-#shortLine {
-  width: 42px;
+.shortLine {
+  width: 15%;
   height: 2px;
   margin-top: 2px;
   background-color: var(--main-bg-color);
 }
-.shortLine2 {
+hr {
   width: 95%;
   height: 2px;
   margin-top: 6px;
-  background-color: var(--main-bg-color);
+  color:yellow;
 }
 .name {
   margin-top: 55px;
@@ -140,7 +140,7 @@ table #t03 {
 .fa-camera {
   color: black;
   }
-  i.fa {
+  .loisir i.fa {
     display: inline-block;
     border-radius: 60px;
     box-shadow: 0px 0px 2px black;
@@ -176,7 +176,7 @@ li {
 }
 /***********Média  querie***with directive CSS******  Responsive Design  side ************/
 @media screen and (max-width: 600px) {
-  header {
+  main {
     width: 100%;
     flex-direction: column;
   }
