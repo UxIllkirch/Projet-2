@@ -34,7 +34,6 @@ img {
   height: auto;
 }
 .effect {
-  font-style: oblique;
   font-weight: bold;
 }
 p.h {
@@ -61,20 +60,20 @@ aside.propos {
   text-decoration: none;
   color: black;
 }
-h5.loisirs {
+h5.loisir {
   margin-top: 100px;
 }
 h6 {
   padding: 20px;
 }
-aside.loisir {
+aside.icones {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
   flex: 2;
 }
-aside.loisir i {
-  font-size: 37px;
+aside.icones i {
+  font-size: 35px;
 }
 /********************** section  droite    *******************/
 #sectionRight {
@@ -82,27 +81,30 @@ aside.loisir i {
   padding-left: 60px;
   width: 73%;
 }
-.section-formation {
+.rubrique {
+  display:flex;
   margin-top: 50px;
   font-weight: bold;
 }
-#shortLine {
-  width: 42px;
+hr.shortLine {
+  width: 7%;
   height: 2px;
   margin-top: 2px;
-  background-color: var(--main-bg-color);
+  border-top: 1px solid var(--main-bg-color);
 }
-.shortLine2 {
+hr {
   width: 95%;
   height: 2px;
   margin-top: 6px;
-  background-color: var(--main-bg-color);
+  border-top: 1px solid var(--main-bg-color);
+  border-top-color: var(--main-bg-color);
 }
 .name {
   margin-top: 55px;
   font-weight: bold;
   color: var(--main-bg-color);
-  font-size: 185%;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 .name em {
   color: black;
@@ -111,8 +113,7 @@ aside.loisir i {
 table {
   border-collapse: collapse;
 }
-th,
-td {
+th,td {
   text-align: left;
   padding: 15px 15px;
 }
@@ -135,23 +136,32 @@ table #t03 {
   color: var(--main-bg-color);
 }
 /*****icones Loisirs****************/
-.fa-music,
+.fa-camera,
 .fa-futbol-o,
-.fa-camera {
+.fa-music {
   color: black;
-  border-radius: 50%;
-  border: rgb(26, 26, 26);
-}
+  }
+/*aside .icones{
+   justify-content: space-between;
+}*/
+aside.icones i.fa {
+    display: inline-block;
+    justify-content: space-between;
+    border-radius: 37px;
+    box-shadow: 0px 0px 2px black;
+    padding: 0.2em 0.2em;
+  }
 /*************************************/
 #article2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-left: 0;
+  /*margin-left: 0;*/
+
 }
-#article2 h6 {
+#article2 h3 {
   font-size: 17px;
-  padding-bottom: 3px;
+  padding-top:10px;
 }
 #article2 span {
   font-weight: normal;
@@ -164,22 +174,23 @@ ul {
 li {
   margin-left: 2px;
 }
-#reference {
-  width: 50%;
-}
-#reference2 {
+#article2 .reference .reference2{
   width: 50%;
 }
 /***********Média  querie***with directive CSS******  Responsive Design  side ************/
 @media screen and (max-width: 600px) {
-  header {
-    width: 100%;
+  main {
     flex-direction: column;
+    width: 100%;
+    
   }
-  #sectionLeft {
+  section#sectionLeft {
     width: 100%;
   }
-  #sectionRght {
+  section#sectionRight {
     width: 100%;
+    padding-left:15px;
+    padding-right: 15px;
+    }
   }
 }
