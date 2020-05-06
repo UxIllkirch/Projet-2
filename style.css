@@ -11,7 +11,7 @@ body {
 }
 main {
   display: flex;
-  width: 100%;
+  width: 80%;
   margin: auto;
   border: 1px solid black;
 }
@@ -69,7 +69,7 @@ h6 {
 aside.icones {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin: 10px 0px;
   flex: 2;
 }
 aside.icones i {
@@ -83,7 +83,7 @@ aside.icones i {
 }
 .rubrique {
   display:flex;
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: bold;
 }
 hr.shortLine {
@@ -141,14 +141,11 @@ table #t03 {
 .fa-music {
   color: black;
   }
-/*aside .icones{
-   justify-content: space-between;
-}*/
 aside.icones i.fa {
     display: inline-block;
     justify-content: space-between;
     border-radius: 37px;
-    box-shadow: 0px 0px 2px black;
+    box-shadow: black 0 0 0 1px;
     padding: 0.2em 0.2em;
   }
 /*************************************/
@@ -156,8 +153,7 @@ aside.icones i.fa {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /*margin-left: 0;*/
-
+  padding-bottom: 20px;
 }
 #article2 h3 {
   font-size: 17px;
@@ -174,23 +170,46 @@ ul {
 li {
   margin-left: 2px;
 }
-#article2 .reference .reference2{
-  width: 50%;
+li.underline{
+  text-decoration-line: underline;
+  padding-bottom: 10px;
 }
 /***********Média  querie***with directive CSS******  Responsive Design  side ************/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   main {
     flex-direction: column;
     width: 100%;
-    
   }
   section#sectionLeft {
     width: 100%;
+     margin-top: 130px;
   }
   section#sectionRight {
     width: 100%;
     padding-left:15px;
     padding-right: 15px;
+
     }
+  #sectionRight header{
+    position: absolute;
+        top: 12px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        display: block;
+        text-align: center;
+        }
+        hr.shortLine{
+          display: none;
+        }
+#sectionRight  header  {
+        width:auto;
+        margin-left: 0px;
+    }
+h3 {
+  text-align: center;
+  display: block;
   }
 }
